@@ -35,8 +35,8 @@ named "service-name", returning a random entry from the list. Then it utilized
 nginx's built-in `proxy_pass` to send traffic to that IP:PORT.
 
 To put it another way, requests to "http://example.com/my-service" are
-automatically load-balanced with Consul's health checks and randomly
-round-robined.
+load-balanced among the instances registered in a Consul service, using Consul's 
+health checks to remove unhealthy backends automatically.
 
 
 ## Architecture
