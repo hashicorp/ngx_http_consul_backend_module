@@ -48,7 +48,7 @@ RUN \
   CGO_CFLAGS="-I /tmp/ngx_devel_kit-0.3.0/src" \
   go build \
     -buildmode=c-shared \
-    -o /usr/local/nginx/ext/ngx_http_consul_backend_module.a \
+    -o /usr/local/nginx/ext/ngx_http_consul_backend_module.so \
     src/ngx_http_consul_backend_module.go
 
 RUN \
