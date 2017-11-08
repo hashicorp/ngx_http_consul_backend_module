@@ -6,7 +6,7 @@ dynamically choosing a healthy backend by communicating directly with HashiCorp
 
 **This code is for example purposes only. It demonstrates both the ability to
 call Go code from C and the ability to link nginx directly to Consul! It is
-not production ready and should be considered _inspiration only_.**.
+not production ready and should be considered _inspiration only_.**
 
 
 ## Usage
