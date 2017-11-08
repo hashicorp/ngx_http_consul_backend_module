@@ -77,8 +77,9 @@ The general flow is as follows:
 1. The `ngx_http_consul_backend` calls `dlopen` on the shared C library (the
 `.a` file mentioned above), and executes the Go function by calling its symbol.
 
-1. The Go communicates with Consul using the official API client library,
-compiles a list of IP:PORT results, and then chooses a random result to return.
+1. The Go function communicates with Consul using the official API client
+library, compiles a list of IP:PORT results, and then chooses a random result to
+return.
 
 1. The IP:PORT is returned to the `ngx_http_consul_backend` function, which then
 sets the result as the defined variable (e.g. `$backend`).

@@ -8,7 +8,6 @@ import (
 	"fmt"
 	"log"
 	"math/rand"
-	"sort"
 	"strings"
 	"time"
 
@@ -105,6 +104,5 @@ func backends(name, tag string) ([]string, error) {
 		addrs[i] = fmt.Sprintf("%s:%d", addr, s.Service.Port)
 	}
 
-	sort.Strings(addrs)
 	return addrs, nil
 }
