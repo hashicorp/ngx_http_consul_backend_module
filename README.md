@@ -55,9 +55,9 @@ showcase a really cool feature of Go - shared C libraries. Each request goes
 through Consul, meaning the probability of routing traffic to an unhealthy host
 is significantly lower than other solutions.
 
-Negatively, this requires Golang to compile the static library `.a` file. In
+Negatively, this requires Golang to compile the dynamic library `.so` file. In
 theory, this could be compiled in advance by a CI/CD system. There is no need
-for the Golang _runtime_, since the runtime is compiled into the static library.
+for the Golang _runtime_, since the runtime is compiled into the dynamic library.
 Additionally, each request goes through Consul. Thus using a local agent is
 required for performance and latency reasons.
 
@@ -75,7 +75,7 @@ The general flow is as follows:
   (e.g. `my-service`).
 
 1. The `ngx_http_consul_backend` calls `dlopen` on the shared C library (the
-`.a` file mentioned above), and executes the Go function by calling its symbol.
+`.so` file mentioned above), and executes the Go function by calling its symbol.
 
 1. The Go function communicates with Consul using the official API client
 library, compiles a list of IP:PORT results, and then chooses a random result to
@@ -135,12 +135,12 @@ This uses CGO and binds to the nginx development kit:
     $ CGO_CFLAGS="-I /tmp/ngx_devel_kit-0.3.0/src" \
         go build \
           -buildmode=c-shared \
-          -o /usr/local/nginx/ext/ngx_http_consul_backend_module.a \
+          -o /usr/local/nginx/ext/ngx_http_consul_backend_module.so \
           src/ngx_http_consul_backend_module.go
     ```
 
     This will compile the object file with symbols to
-    `/usr/local/nginx/ext/nginx_http_consul_backend_module.a`. Note that the
+    `/usr/local/nginx/ext/nginx_http_consul_backend_module.so`. Note that the
     name and location of this file is important - it will be `dlopen`ed at
     runtime by nginx.
 
