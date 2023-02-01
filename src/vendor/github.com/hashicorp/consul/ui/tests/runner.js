@@ -1,3 +1,8 @@
+/**
+ * Copyright (c) HashiCorp, Inc.
+ * SPDX-License-Identifier: MPL-2.0
+ */
+
 if (window.location.search.indexOf("?test") !== -1) {
   document.write(
     '<div id="qunit"></div>' +

@@ -1,3 +1,8 @@
+/**
+ * Copyright (c) HashiCorp, Inc.
+ * SPDX-License-Identifier: MPL-2.0
+ */
+
 window.App = Ember.Application.create({
   rootElement: "#app",
   currentPath: ''

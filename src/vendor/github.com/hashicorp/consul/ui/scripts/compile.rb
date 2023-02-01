@@ -1,3 +1,6 @@
+# Copyright (c) HashiCorp, Inc.
+# SPDX-License-Identifier: MPL-2.0
+
 require 'uglifier'
 
 File.open("static/application.min.js", "w") {|file| file.truncate(0) }

@@ -1,4 +1,7 @@
 #!/usr/bin/env bash
+# Copyright (c) HashiCorp, Inc.
+# SPDX-License-Identifier: MPL-2.0
+
 set -e
 
 sudo iptables -I INPUT -s 0/0 -p tcp --dport 8300 -j ACCEPT

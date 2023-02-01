@@ -1,3 +1,6 @@
+# Copyright (c) HashiCorp, Inc.
+# SPDX-License-Identifier: MPL-2.0
+
 provider "openstack" {
     user_name  = "${var.username}"
     tenant_name = "${var.tenant_name}"

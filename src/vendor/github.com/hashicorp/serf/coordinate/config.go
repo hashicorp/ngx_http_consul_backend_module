@@ -1,3 +1,6 @@
+// Copyright (c) HashiCorp, Inc.
+// SPDX-License-Identifier: MPL-2.0
+
 package coordinate
 
 // Config is used to set the parameters of the Vivaldi-based coordinate mapping

@@ -1,3 +1,8 @@
+/**
+ * Copyright (c) HashiCorp, Inc.
+ * SPDX-License-Identifier: MPL-2.0
+ */
+
 /*!
  * classie - class helper functions
  * from bonzo https://github.com/ded/bonzo

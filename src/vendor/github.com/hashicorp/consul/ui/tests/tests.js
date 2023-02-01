@@ -1,3 +1,8 @@
+/**
+ * Copyright (c) HashiCorp, Inc.
+ * SPDX-License-Identifier: MPL-2.0
+ */
+
 // in order to see the app running inside the QUnit runner
 App.rootElement = '#ember-testing';
 
