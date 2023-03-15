@@ -1,3 +1,8 @@
+/**
+ * Copyright (c) HashiCorp, Inc.
+ * SPDX-License-Identifier: MPL-2.0
+ */
+
 //
 // I intentionally am not using ember-data and the fixture
 // adapter. I'm not confident the Consul UI API will be compatible

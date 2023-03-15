@@ -1,3 +1,6 @@
+// Copyright (c) HashiCorp, Inc.
+// SPDX-License-Identifier: MPL-2.0
+
 // The /v1/operator/area endpoints are available only in Consul Enterprise and
 // interact with its network area subsystem. Network areas are used to link
 // together Consul servers in different Consul datacenters. With network areas,

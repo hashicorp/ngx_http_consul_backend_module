@@ -1,3 +1,8 @@
+/**
+ * Copyright (c) HashiCorp, Inc.
+ * SPDX-License-Identifier: MPL-2.0
+ */
+
 .form-group {
     .form-control {
         @include transition(border-color .2s ease-in-out);
