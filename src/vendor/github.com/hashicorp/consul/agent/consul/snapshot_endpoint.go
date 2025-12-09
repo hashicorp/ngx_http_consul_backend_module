@@ -1,4 +1,4 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2017, 2023
 // SPDX-License-Identifier: MPL-2.0
 
 // The snapshot endpoint is a special non-RPC endpoint that supports streaming
