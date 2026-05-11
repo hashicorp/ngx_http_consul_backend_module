@@ -1,4 +1,4 @@
-// Copyright IBM Corp. 2017, 2023
+// Copyright IBM Corp. 2017, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 // snapshot manages the interactions between Consul and Raft in order to take
